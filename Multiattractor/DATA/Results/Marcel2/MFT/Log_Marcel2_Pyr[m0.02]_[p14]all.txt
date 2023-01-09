@@ -1,0 +1,2514 @@
+
+
+
+    *******************      Mean Field Program      ********************
+
+
+
+--- Searching For Thresholds... 
+    ... for ni_e=7   ni_i=7,7,7,   ni_ext_e=7   ni_ext_i=7
+
+    Done. Thresholds found: (E) 4.84067, (I) 6.70931,5.56513,5.60991,
+
+
+Check stability of state used for finding thresholds...
+Stable
+
+--- Starting RATE_VS_J mode...
+
+--- spontaneous activity...
+
+First round of goAB_simul
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 5
+    f             : 0.0642857
+    p             : 14
+    J+            : 7;  J-  :0.775
+    starting point: 7  7  7  7  7 
+ 7.95  1.446233(bg)  7.369519(PV) 9.900535(SST) 7.155661(VIP)  [count:0]>time:200ms
+ 7.95  1.446239(bg)  7.369552(PV) 9.900602(SST) 7.155718(VIP)  [count:5]>time:400ms
+ 7.95  1.446239(bg)  7.369552(PV) 9.900602(SST) 7.155718(VIP)  [count:5]>time:600ms
+ 7.95  1.446239(bg)  7.369552(PV) 9.900602(SST) 7.155718(VIP)  [count:5]>time:800ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    7.94958  1.44624  7.36955  9.9006  7.15572    delta_t: 0.1 ms
+First round of mnewt
+Running RATE_VS_Jfun...
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7
+    stable fixed point: 7.94958  1.44624  7.36955  9.9006  7.15572 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.1
+    stable fixed point: 7.96656  1.38721  7.3748  9.98791  7.14574 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.2
+    stable fixed point: 7.98346  1.32983  7.38015  10.0755  7.13612 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.3
+    stable fixed point: 8.00028  1.27412  7.3856  10.1634  7.12688 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.4
+    stable fixed point: 8.01702  1.22005  7.39115  10.2516  7.11801 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.5
+    stable fixed point: 8.03368  1.16762  7.39681  10.3401  7.10953 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.6
+    stable fixed point: 8.05027  1.11682  7.40257  10.4289  7.10145 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.7
+    stable fixed point: 8.06679  1.06763  7.40843  10.518  7.09376 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.8
+    stable fixed point: 8.08324  1.02004  7.41441  10.6073  7.08648 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 7.9
+    stable fixed point: 8.09962  0.974032  7.42049  10.6969  7.07961 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 8
+    stable fixed point: 8.11594  0.929581  7.42669  10.7867  7.07316 
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 5   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+
+--- Starting grouped mode...
+ Running with 1 hi grouped sel populations...
+Jplus=7
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.1;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.2;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.3;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.4;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.5;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.6;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.7;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  9.43566  7.97904  1.0205  7.41435  10.6064  7.08655 
+    fixed point: 9.44  7.98  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 1 grouped Active Clusters ---> stored...
+Jplus=7.9
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  10.5617  7.9096  0.975665  7.42027  10.6936  7.07985 
+    fixed point: 10.6  7.91  0.976  7.42  10.7  7.08 
+
+ --- Fixed point with 1 grouped Active Clusters ---> stored...
+Jplus=8
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 2000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  2  2  10  10  10 
+
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  11.5421  7.85107  0.932889  7.42621  10.7799  7.07363 
+    fixed point: 11.5  7.85  0.933  7.43  10.8  7.07 
+
+ --- Fixed point with 1 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 2 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  9.55522  7.83744  1.0212  7.41426  10.6051  7.08665 
+    fixed point: 9.56  7.84  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 2 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  10.7672  7.65329  0.978147  7.41994  10.6887  7.08022 
+    fixed point: 10.8  7.65  0.978  7.42  10.7  7.08 
+
+ --- Fixed point with 2 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  11.8225  7.49458  0.93787  7.42551  10.7697  7.07435 
+    fixed point: 11.8  7.49  0.938  7.43  10.8  7.07 
+
+ --- Fixed point with 2 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 3 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  9.71884  7.63613  1.02236  7.41411  10.6029  7.08683 
+    fixed point: 9.72  7.64  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 3 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  11.0394  7.29417  0.982079  7.41941  10.681  7.0808 
+    fixed point: 11  7.29  0.982  7.42  10.7  7.08 
+
+ --- Fixed point with 3 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  12.1869  6.99812  0.945585  7.42442  10.754  7.07546 
+    fixed point: 12.2  7  0.946  7.42  10.8  7.08 
+
+ --- Fixed point with 3 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 4 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  9.94973  7.33451  1.0244  7.41385  10.599  7.08714 
+    fixed point: 9.95  7.33  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 4 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  11.3985  6.77282  0.988427  7.41855  10.6685  7.08174 
+    fixed point: 11.4  6.77  0.988  7.42  10.7  7.08 
+
+ --- Fixed point with 4 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  12.6438  6.29044  0.957322  7.42278  10.7303  7.07716 
+    fixed point: 12.6  6.29  0.957  7.42  10.7  7.08 
+
+ --- Fixed point with 4 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 5 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  10.2755  6.86092  1.02812  7.41337  10.5919  7.0877 
+    fixed point: 10.3  6.86  1.03  7.41  10.6  7.09 
+
+ --- Fixed point with 5 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  11.8285  6.01473  0.997843  7.4173  10.6501  7.08314 
+    fixed point: 11.8  6.01  0.998  7.42  10.7  7.08 
+
+ --- Fixed point with 5 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  13.1087  5.3181  0.971726  7.42081  10.7015  7.07927 
+    fixed point: 13.1  5.32  0.972  7.42  10.7  7.08 
+
+ --- Fixed point with 5 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 6 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  10.6748  6.13097  1.03408  7.41261  10.5806  7.08861 
+    fixed point: 10.7  6.13  1.03  7.41  10.6  7.09 
+
+ --- Fixed point with 6 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  12.1513  5.04065  1.00627  7.4162  10.6338  7.0844 
+    fixed point: 12.2  5.04  1.01  7.42  10.6  7.08 
+
+ --- Fixed point with 6 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  13.2517  4.23391  0.976675  7.42013  10.6916  7.08 
+    fixed point: 13.3  4.23  0.977  7.42  10.7  7.08 
+
+ --- Fixed point with 6 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 7 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  6.13097  1.03408  7.41261  10.5806  7.08861 
+ 10.71  5.444  1.036321(bg)  7.412291(PV) 10.576240(SST) 7.088839(VIP)  [count:0]>time:200ms
+ 10.85  5.3  1.037875(bg)  7.412126(PV) 10.573396(SST) 7.089156(VIP)  [count:0]>time:400ms
+ 10.9  5.25  1.038408(bg)  7.412064(PV) 10.572413(SST) 7.089259(VIP)  [count:0]>time:600ms
+ 10.92  5.235  1.038576(bg)  7.412045(PV) 10.572102(SST) 7.089292(VIP)  [count:0]>time:800ms
+ 10.92  5.23  1.038629(bg)  7.412039(PV) 10.572006(SST) 7.089303(VIP)  [count:0]>time:1000ms
+ 10.93  5.228  1.038644(bg)  7.412037(PV) 10.571977(SST) 7.089306(VIP)  [count:2]>time:1200ms
+ 10.93  5.228  1.038649(bg)  7.412036(PV) 10.571968(SST) 7.089307(VIP)  [count:2]>time:1400ms
+ 10.93  5.228  1.038651(bg)  7.412036(PV) 10.571965(SST) 7.089307(VIP)  [count:4]>time:1600ms
+ 10.93  5.228  1.038651(bg)  7.412036(PV) 10.571964(SST) 7.089307(VIP)  [count:4]>time:1800ms
+
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  10.9258  5.22771  1.03865  7.41204  10.572  7.08931 
+    fixed point: 10.9  5.23  1.04  7.41  10.6  7.09 
+
+ --- Fixed point with 7 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  12.0351  4.14329  1.0031  7.41661  10.6399  7.08393 
+    fixed point: 12  4.14  1  7.42  10.6  7.08 
+
+ --- Fixed point with 7 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  12.7938  3.41438  0.961692  7.42218  10.7215  7.0778 
+    fixed point: 12.8  3.41  0.962  7.42  10.7  7.08 
+
+ --- Fixed point with 7 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 8 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[5]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  5.22771  1.03865  7.41204  10.572  7.08931 
+ 10.43  4.937  1.033621(bg)  7.412628(PV) 10.581319(SST) 7.088402(VIP)  [count:0]>time:200ms
+ 10.7  4.584  1.035353(bg)  7.412447(PV) 10.578163(SST) 7.088779(VIP)  [count:0]>time:400ms
+ 10.76  4.505  1.035670(bg)  7.412412(PV) 10.577585(SST) 7.088848(VIP)  [count:0]>time:600ms
+ 10.77  4.491  1.035724(bg)  7.412406(PV) 10.577485(SST) 7.088860(VIP)  [count:0]>time:800ms
+ 10.77  4.489  1.035734(bg)  7.412405(PV) 10.577468(SST) 7.088862(VIP)  [count:2]>time:1000ms
+ 10.77  4.488  1.035735(bg)  7.412405(PV) 10.577465(SST) 7.088862(VIP)  [count:4]>time:1200ms
+ 10.77  4.488  1.035735(bg)  7.412405(PV) 10.577465(SST) 7.088862(VIP)  [count:4]>time:1400ms
+ 10.77  4.488  1.035735(bg)  7.412405(PV) 10.577465(SST) 7.088862(VIP)  [count:4]>time:1600ms
+ 10.77  4.488  1.035736(bg)  7.412405(PV) 10.577464(SST) 7.088862(VIP)  [count:6]>time:1800ms
+
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  10.7701  4.48804  1.03574  7.4124  10.5775  7.08886 
+    fixed point: 10.8  4.49  1.04  7.41  10.6  7.09 
+
+ --- Fixed point with 8 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[1]<0
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[3]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  4.14329  1.0031  7.41661  10.6399  7.08393 
+ 11.38  3.717  0.990623(bg)  7.418272(PV) 10.664223(SST) 7.082103(VIP)  [count:0]>time:200ms
+ 11.48  3.576  0.990203(bg)  7.418319(PV) 10.665011(SST) 7.082006(VIP)  [count:0]>time:400ms
+ 11.49  3.571  0.990184(bg)  7.418320(PV) 10.665045(SST) 7.082001(VIP)  [count:2]>time:600ms
+ 11.49  3.571  0.990184(bg)  7.418321(PV) 10.665046(SST) 7.082001(VIP)  [count:4]>time:800ms
+ 11.49  3.571  0.990184(bg)  7.418321(PV) 10.665046(SST) 7.082001(VIP)  [count:6]>time:1000ms
+ 11.49  3.571  0.990184(bg)  7.418321(PV) 10.665046(SST) 7.082001(VIP)  [count:6]>time:1200ms
+ 11.49  3.571  0.990184(bg)  7.418321(PV) 10.665046(SST) 7.082001(VIP)  [count:6]>time:1400ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    11.4862  3.57069  0.990184  7.41832  10.665  7.082    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  11.4862  3.57069  0.990184  7.41832  10.665  7.082 
+    fixed point: 11.5  3.57  0.99  7.42  10.7  7.08 
+
+ --- Fixed point with 8 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  3.41438  0.961692  7.42218  10.7215  7.0778 
+ 11.95  2.991  0.941323(bg)  7.425038(PV) 10.762747(SST) 7.074926(VIP)  [count:0]>time:200ms
+ 11.97  2.961  0.940922(bg)  7.425075(PV) 10.763487(SST) 7.074786(VIP)  [count:1]>time:400ms
+ 11.97  2.961  0.940920(bg)  7.425075(PV) 10.763492(SST) 7.074785(VIP)  [count:4]>time:600ms
+ 11.97  2.961  0.940920(bg)  7.425075(PV) 10.763492(SST) 7.074785(VIP)  [count:6]>time:800ms
+ 11.97  2.961  0.940920(bg)  7.425075(PV) 10.763492(SST) 7.074785(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    11.9748  2.96101  0.94092  7.42507  10.7635  7.07478    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  11.9748  2.96101  0.94092  7.42507  10.7635  7.07478 
+    fixed point: 12  2.96  0.941  7.43  10.8  7.07 
+
+ --- Fixed point with 8 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 9 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[1]<0
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[3]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  4.48804  1.03574  7.4124  10.5775  7.08886 
+ 10  4.621  1.028954(bg)  7.413237(PV) 10.590235(SST) 7.087769(VIP)  [count:0]>time:200ms
+ 10.28  4.119  1.028866(bg)  7.413281(PV) 10.590483(SST) 7.087828(VIP)  [count:0]>time:400ms
+ 10.32  4.054  1.028732(bg)  7.413295(PV) 10.590728(SST) 7.087798(VIP)  [count:0]>time:600ms
+ 10.32  4.048  1.028717(bg)  7.413297(PV) 10.590755(SST) 7.087794(VIP)  [count:2]>time:800ms
+ 10.32  4.047  1.028715(bg)  7.413297(PV) 10.590758(SST) 7.087794(VIP)  [count:4]>time:1000ms
+ 10.32  4.047  1.028715(bg)  7.413297(PV) 10.590758(SST) 7.087794(VIP)  [count:4]>time:1200ms
+ 10.32  4.047  1.028715(bg)  7.413297(PV) 10.590758(SST) 7.087794(VIP)  [count:6]>time:1400ms
+ 10.32  4.047  1.028715(bg)  7.413297(PV) 10.590758(SST) 7.087794(VIP)  [count:6]>time:1600ms
+ 10.32  4.047  1.028715(bg)  7.413297(PV) 10.590758(SST) 7.087794(VIP)  [count:6]>time:1800ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    10.3208  4.04708  1.02872  7.4133  10.5908  7.08779    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  10.3208  4.04708  1.02872  7.4133  10.5908  7.08779 
+    fixed point: 10.3  4.05  1.03  7.41  10.6  7.09 
+
+ --- Fixed point with 9 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  3.57069  0.990184  7.41832  10.665  7.082 
+ 10.69  3.433  0.979817(bg)  7.419763(PV) 10.685629(SST) 7.080671(VIP)  [count:0]>time:200ms
+ 10.78  3.275  0.978322(bg)  7.419913(PV) 10.688386(SST) 7.080247(VIP)  [count:0]>time:400ms
+ 10.78  3.273  0.978297(bg)  7.419915(PV) 10.688431(SST) 7.080239(VIP)  [count:3]>time:600ms
+ 10.78  3.273  0.978297(bg)  7.419915(PV) 10.688432(SST) 7.080239(VIP)  [count:5]>time:800ms
+ 10.78  3.273  0.978297(bg)  7.419915(PV) 10.688432(SST) 7.080239(VIP)  [count:6]>time:1000ms
+ 10.78  3.273  0.978297(bg)  7.419915(PV) 10.688432(SST) 7.080239(VIP)  [count:6]>time:1200ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    10.7786  3.27308  0.978297  7.41991  10.6884  7.08024    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  10.7786  3.27308  0.978297  7.41991  10.6884  7.08024 
+    fixed point: 10.8  3.27  0.978  7.42  10.7  7.08 
+
+ --- Fixed point with 9 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  2.96101  0.94092  7.42507  10.7635  7.07478 
+ 11.08  2.777  0.927266(bg)  7.427052(PV) 10.791651(SST) 7.072975(VIP)  [count:0]>time:200ms
+ 11.1  2.747  0.926674(bg)  7.427103(PV) 10.792736(SST) 7.072743(VIP)  [count:1]>time:400ms
+ 11.1  2.747  0.926672(bg)  7.427103(PV) 10.792739(SST) 7.072743(VIP)  [count:6]>time:600ms
+ 11.1  2.747  0.926672(bg)  7.427103(PV) 10.792739(SST) 7.072743(VIP)  [count:6]>time:800ms
+ 11.1  2.747  0.926672(bg)  7.427103(PV) 10.792739(SST) 7.072743(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    11.1006  2.74653  0.926672  7.4271  10.7927  7.07274    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  11.1006  2.74653  0.926672  7.4271  10.7927  7.07274 
+    fixed point: 11.1  2.75  0.927  7.43  10.8  7.07 
+
+ --- Fixed point with 9 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 10 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[1]<0
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[3]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  4.04708  1.02872  7.4133  10.5908  7.08779 
+ 9.515  4.498  1.024923(bg)  7.413761(PV) 10.597966(SST) 7.087232(VIP)  [count:0]>time:200ms
+ 9.765  3.875  1.023194(bg)  7.414010(PV) 10.601291(SST) 7.086985(VIP)  [count:0]>time:400ms
+ 9.786  3.824  1.022930(bg)  7.414038(PV) 10.601771(SST) 7.086918(VIP)  [count:0]>time:600ms
+ 9.787  3.821  1.022914(bg)  7.414040(PV) 10.601800(SST) 7.086914(VIP)  [count:2]>time:800ms
+ 9.787  3.821  1.022913(bg)  7.414040(PV) 10.601801(SST) 7.086914(VIP)  [count:4]>time:1000ms
+ 9.787  3.821  1.022913(bg)  7.414040(PV) 10.601802(SST) 7.086914(VIP)  [count:6]>time:1200ms
+ 9.787  3.821  1.022913(bg)  7.414040(PV) 10.601802(SST) 7.086914(VIP)  [count:6]>time:1400ms
+ 9.787  3.821  1.022913(bg)  7.414040(PV) 10.601802(SST) 7.086914(VIP)  [count:6]>time:1600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.78689  3.8206  1.02291  7.41404  10.6018  7.08691    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  9.78689  3.8206  1.02291  7.41404  10.6018  7.08691 
+    fixed point: 9.79  3.82  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 10 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+
+
+>>> Too many steps (>5000) in routine mnewt
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  3.27308  0.978297  7.41991  10.6884  7.08024 
+ 10.01  3.321  0.973510(bg)  7.420653(PV) 10.698245(SST) 7.079872(VIP)  [count:0]>time:200ms
+ 10.08  3.14  0.971472(bg)  7.420841(PV) 10.701966(SST) 7.079237(VIP)  [count:0]>time:400ms
+ 10.09  3.139  0.971454(bg)  7.420843(PV) 10.701999(SST) 7.079230(VIP)  [count:4]>time:600ms
+ 10.09  3.139  0.971453(bg)  7.420843(PV) 10.702000(SST) 7.079230(VIP)  [count:6]>time:800ms
+ 10.09  3.139  0.971453(bg)  7.420843(PV) 10.702000(SST) 7.079230(VIP)  [count:6]>time:1000ms
+ 10.09  3.139  0.971453(bg)  7.420843(PV) 10.702000(SST) 7.079230(VIP)  [count:6]>time:1200ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    10.0853  3.13865  0.971453  7.42084  10.702  7.07923    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  10.0853  3.13865  0.971453  7.42084  10.702  7.07923 
+    fixed point: 10.1  3.14  0.971  7.42  10.7  7.08 
+
+ --- Fixed point with 10 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  2.74653  0.926672  7.4271  10.7927  7.07274 
+ 10.29  2.697  0.920880(bg)  7.427978(PV) 10.804900(SST) 7.072101(VIP)  [count:0]>time:200ms
+ 10.3  2.663  0.920205(bg)  7.428035(PV) 10.806135(SST) 7.071823(VIP)  [count:1]>time:400ms
+ 10.3  2.663  0.920204(bg)  7.428035(PV) 10.806137(SST) 7.071823(VIP)  [count:6]>time:600ms
+ 10.3  2.663  0.920204(bg)  7.428035(PV) 10.806137(SST) 7.071823(VIP)  [count:6]>time:800ms
+ 10.3  2.663  0.920204(bg)  7.428035(PV) 10.806137(SST) 7.071823(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    10.302  2.66302  0.920204  7.42804  10.8061  7.07182    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  10.302  2.66302  0.920204  7.42804  10.8061  7.07182 
+    fixed point: 10.3  2.66  0.92  7.43  10.8  7.07 
+
+ --- Fixed point with 10 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 11 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[1]<0
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[3]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  3.8206  1.02291  7.41404  10.6018  7.08691 
+ 9.06  4.497  1.022394(bg)  7.414074(PV) 10.602793(SST) 7.086868(VIP)  [count:0]>time:200ms
+ 9.261  3.765  1.019987(bg)  7.414423(PV) 10.607417(SST) 7.086501(VIP)  [count:0]>time:400ms
+ 9.273  3.721  1.019741(bg)  7.414448(PV) 10.607860(SST) 7.086435(VIP)  [count:0]>time:600ms
+ 9.274  3.719  1.019731(bg)  7.414449(PV) 10.607878(SST) 7.086433(VIP)  [count:3]>time:800ms
+ 9.274  3.719  1.019731(bg)  7.414449(PV) 10.607879(SST) 7.086432(VIP)  [count:4]>time:1000ms
+ 9.274  3.719  1.019731(bg)  7.414449(PV) 10.607879(SST) 7.086432(VIP)  [count:6]>time:1200ms
+ 9.274  3.719  1.019731(bg)  7.414449(PV) 10.607879(SST) 7.086432(VIP)  [count:6]>time:1400ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.27358  3.71918  1.01973  7.41445  10.6079  7.08643    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  9.27358  3.71918  1.01973  7.41445  10.6079  7.08643 
+    fixed point: 9.27  3.72  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 11 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  3.13865  0.971453  7.42084  10.702  7.07923 
+ 9.408  3.306  0.971114(bg)  7.421001(PV) 10.703074(SST) 7.079582(VIP)  [count:0]>time:200ms
+ 9.467  3.096  0.969024(bg)  7.421175(PV) 10.706837(SST) 7.078876(VIP)  [count:0]>time:400ms
+ 9.467  3.095  0.969011(bg)  7.421176(PV) 10.706860(SST) 7.078871(VIP)  [count:4]>time:600ms
+ 9.467  3.095  0.969011(bg)  7.421176(PV) 10.706861(SST) 7.078871(VIP)  [count:6]>time:800ms
+ 9.467  3.095  0.969011(bg)  7.421176(PV) 10.706861(SST) 7.078871(VIP)  [count:6]>time:1000ms
+ 9.467  3.095  0.969011(bg)  7.421176(PV) 10.706861(SST) 7.078871(VIP)  [count:6]>time:1200ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.46683  3.09502  0.969011  7.42118  10.7069  7.07887    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  9.46683  3.09502  0.969011  7.42118  10.7069  7.07887 
+    fixed point: 9.47  3.1  0.969  7.42  10.7  7.08 
+
+ --- Fixed point with 11 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  2.66302  0.920204  7.42804  10.8061  7.07182 
+ 9.6  2.691  0.919870(bg)  7.428125(PV) 10.806995(SST) 7.071956(VIP)  [count:0]>time:200ms
+ 9.611  2.651  0.919210(bg)  7.428179(PV) 10.808202(SST) 7.071682(VIP)  [count:2]>time:400ms
+ 9.611  2.651  0.919210(bg)  7.428179(PV) 10.808203(SST) 7.071682(VIP)  [count:6]>time:600ms
+ 9.611  2.651  0.919210(bg)  7.428179(PV) 10.808203(SST) 7.071682(VIP)  [count:6]>time:800ms
+ 9.611  2.651  0.919210(bg)  7.428179(PV) 10.808203(SST) 7.071682(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.61138  2.65078  0.91921  7.42818  10.8082  7.07168    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  9.61138  2.65078  0.91921  7.42818  10.8082  7.07168 
+    fixed point: 9.61  2.65  0.919  7.43  10.8  7.07 
+
+ --- Fixed point with 11 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 12 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[1]<0
+>>> Error: Sigma[2]<0
+>>> Error: Sigma[3]<0
+>>> Error: Sigma[4]<0
+>>> Error: Sigma[5]<0
+>>> Error: Sigma[6]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  3.71918  1.01973  7.41445  10.6079  7.08643 
+ 8.67  4.56  1.021023(bg)  7.414224(PV) 10.605367(SST) 7.086631(VIP)  [count:0]>time:200ms
+ 8.809  3.73  1.018870(bg)  7.414566(PV) 10.609548(SST) 7.086326(VIP)  [count:0]>time:400ms
+ 8.816  3.69  1.018692(bg)  7.414583(PV) 10.609866(SST) 7.086276(VIP)  [count:1]>time:600ms
+ 8.816  3.688  1.018686(bg)  7.414584(PV) 10.609876(SST) 7.086275(VIP)  [count:4]>time:800ms
+ 8.816  3.688  1.018686(bg)  7.414584(PV) 10.609876(SST) 7.086275(VIP)  [count:5]>time:1000ms
+ 8.816  3.688  1.018686(bg)  7.414584(PV) 10.609876(SST) 7.086275(VIP)  [count:6]>time:1200ms
+ 8.816  3.688  1.018686(bg)  7.414584(PV) 10.609876(SST) 7.086275(VIP)  [count:6]>time:1400ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.81627  3.68838  1.01869  7.41458  10.6099  7.08627    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  8.81627  3.68838  1.01869  7.41458  10.6099  7.08627 
+    fixed point: 8.82  3.69  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 12 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  3.09502  0.969011  7.42118  10.7069  7.07887 
+ 8.893  3.345  0.971120(bg)  7.420998(PV) 10.703053(SST) 7.079565(VIP)  [count:0]>time:200ms
+ 8.934  3.103  0.969414(bg)  7.421121(PV) 10.706060(SST) 7.078932(VIP)  [count:0]>time:400ms
+ 8.935  3.102  0.969406(bg)  7.421122(PV) 10.706074(SST) 7.078929(VIP)  [count:4]>time:600ms
+ 8.935  3.102  0.969406(bg)  7.421122(PV) 10.706075(SST) 7.078929(VIP)  [count:6]>time:800ms
+ 8.935  3.102  0.969406(bg)  7.421122(PV) 10.706075(SST) 7.078929(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.93453  3.10194  0.969406  7.42112  10.7061  7.07893    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  8.93453  3.10194  0.969406  7.42112  10.7061  7.07893 
+    fixed point: 8.93  3.1  0.969  7.42  10.7  7.08 
+
+ --- Fixed point with 12 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  2.65078  0.91921  7.42818  10.8082  7.07168 
+ 9.018  2.726  0.921945(bg)  7.427845(PV) 10.802703(SST) 7.072249(VIP)  [count:0]>time:200ms
+ 9.026  2.678  0.921397(bg)  7.427863(PV) 10.803660(SST) 7.071992(VIP)  [count:2]>time:400ms
+ 9.026  2.678  0.921397(bg)  7.427863(PV) 10.803660(SST) 7.071992(VIP)  [count:6]>time:600ms
+ 9.026  2.678  0.921397(bg)  7.427863(PV) 10.803660(SST) 7.071992(VIP)  [count:6]>time:800ms
+ 9.026  2.678  0.921397(bg)  7.427863(PV) 10.803660(SST) 7.071992(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.02586  2.67789  0.921397  7.42786  10.8037  7.07199    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  9.02586  2.67789  0.921397  7.42786  10.8037  7.07199 
+    fixed point: 9.03  2.68  0.921  7.43  10.8  7.07 
+
+ --- Fixed point with 12 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 13 hi grouped sel populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.95  7.95  1.45  7.37  9.9  7.16 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.97  7.97  1.39  7.37  9.99  7.15 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98  7.98  1.33  7.38  10.1  7.14 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8  8  1.27  7.39  10.2  7.13 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.02  8.02  1.22  7.39  10.3  7.12 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03  8.03  1.17  7.4  10.3  7.11 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05  8.05  1.12  7.4  10.4  7.1 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+Stable fixed point.
+->  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.07  8.07  1.07  7.41  10.5  7.09 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=7.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[5]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.8;  J-  :0.775
+    starting point: 20  3.68838  1.01869  7.41458  10.6099  7.08627 
+ 8.347  4.651  1.020328(bg)  7.414286(PV) 10.606643(SST) 7.086483(VIP)  [count:0]>time:200ms
+ 8.418  3.737  1.019091(bg)  7.414535(PV) 10.609115(SST) 7.086349(VIP)  [count:0]>time:400ms
+ 8.421  3.698  1.018998(bg)  7.414544(PV) 10.609280(SST) 7.086322(VIP)  [count:1]>time:600ms
+ 8.421  3.697  1.018996(bg)  7.414544(PV) 10.609284(SST) 7.086321(VIP)  [count:4]>time:800ms
+ 8.421  3.697  1.018996(bg)  7.414544(PV) 10.609284(SST) 7.086321(VIP)  [count:5]>time:1000ms
+ 8.421  3.697  1.018996(bg)  7.414544(PV) 10.609284(SST) 7.086321(VIP)  [count:6]>time:1200ms
+ 8.421  3.697  1.018996(bg)  7.414544(PV) 10.609284(SST) 7.086321(VIP)  [count:6]>time:1400ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.42101  3.6974  1.019  7.41454  10.6093  7.08632    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  8.42101  3.6974  1.019  7.41454  10.6093  7.08632 
+    fixed point: 8.42  3.7  1.02  7.41  10.6  7.09 
+
+ --- Fixed point with 13 grouped Active Clusters ---> stored...
+Jplus=7.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 7.9;  J-  :0.775
+    starting point: 20  3.10194  0.969406  7.42112  10.7061  7.07893 
+ 8.461  3.414  0.972330(bg)  7.420808(PV) 10.700573(SST) 7.079657(VIP)  [count:0]>time:200ms
+ 8.482  3.138  0.971363(bg)  7.420855(PV) 10.702181(SST) 7.079218(VIP)  [count:1]>time:400ms
+ 8.482  3.137  0.971359(bg)  7.420856(PV) 10.702188(SST) 7.079216(VIP)  [count:5]>time:600ms
+ 8.482  3.137  0.971359(bg)  7.420856(PV) 10.702188(SST) 7.079216(VIP)  [count:6]>time:800ms
+ 8.482  3.137  0.971359(bg)  7.420856(PV) 10.702188(SST) 7.079216(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.48241  3.13692  0.971359  7.42086  10.7022  7.07922    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  8.48241  3.13692  0.971359  7.42086  10.7022  7.07922 
+    fixed point: 8.48  3.14  0.971  7.42  10.7  7.08 
+
+ --- Fixed point with 13 grouped Active Clusters ---> stored...
+Jplus=8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+>>> Error: Sigma[2]<0
+
+>>> Error in routine SIGMA2() called by usrfun()
+
+>>> Error in routine usrfun() called by mnewt()
+
+>>> Error in routine mnewt() called by RATE_VS_Jfun_ALL()
+>>> Run goAB_simul instead
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.0642857
+    p             : 14
+    J+            : 8;  J-  :0.775
+    starting point: 20  2.67789  0.921397  7.42786  10.8037  7.07199 
+ 8.528  2.783  0.925512(bg)  7.427378(PV) 10.795387(SST) 7.072791(VIP)  [count:0]>time:200ms
+ 8.532  2.727  0.925177(bg)  7.427318(PV) 10.795829(SST) 7.072530(VIP)  [count:3]>time:400ms
+ 8.532  2.727  0.925177(bg)  7.427318(PV) 10.795829(SST) 7.072530(VIP)  [count:6]>time:600ms
+ 8.532  2.727  0.925177(bg)  7.427318(PV) 10.795829(SST) 7.072530(VIP)  [count:6]>time:800ms
+ 8.532  2.727  0.925177(bg)  7.427318(PV) 10.795829(SST) 7.072530(VIP)  [count:6]>time:1000ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.53228  2.72658  0.925177  7.42732  10.7958  7.07253    delta_t: 0.1 ms
+>>> Recheck goAB_simul output with mnewt
+Stable fixed point.
+->  8.53228  2.72658  0.925177  7.42732  10.7958  7.07253 
+    fixed point: 8.53  2.73  0.925  7.43  10.8  7.07 
+
+ --- Fixed point with 13 grouped Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+
+--- Starting All_mode...
+ Running with 1 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.43566  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  1.0205  7.41435  10.6064  7.08655 
+    fixed point: 9.43566  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  7.97904  1.0205  7.41435  10.6064  7.08655 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  10.5617  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  0.975665  7.42027  10.6936  7.07985 
+    fixed point: 10.5617  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  7.9096  0.975665  7.42027  10.6936  7.07985 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  11.5421  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  0.932889  7.42621  10.7799  7.07363 
+    fixed point: 11.5421  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  7.85107  0.932889  7.42621  10.7799  7.07363 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 2 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.55522  9.55522  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  1.0212  7.41426  10.6051  7.08665 
+    fixed point: 9.55522  9.55522  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  7.83744  1.0212  7.41426  10.6051  7.08665 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  10.7672  10.7672  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  0.978147  7.41994  10.6887  7.08022 
+    fixed point: 10.7672  10.7672  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  7.65329  0.978147  7.41994  10.6887  7.08022 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  11.8225  11.8225  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  0.93787  7.42551  10.7697  7.07435 
+    fixed point: 11.8225  11.8225  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  7.49458  0.93787  7.42551  10.7697  7.07435 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 3 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.71884  9.71884  9.71884  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  1.02236  7.41411  10.6029  7.08683 
+    fixed point: 9.71884  9.71884  9.71884  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  7.63613  1.02236  7.41411  10.6029  7.08683 
+
+ --- Fixed point with 3 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  11.0394  11.0394  11.0394  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  0.982079  7.41941  10.681  7.0808 
+    fixed point: 11.0394  11.0394  11.0394  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  7.29417  0.982079  7.41941  10.681  7.0808 
+
+ --- Fixed point with 3 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  12.1869  12.1869  12.1869  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  0.945585  7.42442  10.754  7.07546 
+    fixed point: 12.1869  12.1869  12.1869  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  6.99812  0.945585  7.42442  10.754  7.07546 
+
+ --- Fixed point with 3 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 4 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.94973  9.94973  9.94973  9.94973  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  1.0244  7.41385  10.599  7.08714 
+    fixed point: 9.94973  9.94973  9.94973  9.94973  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  7.33451  1.0244  7.41385  10.599  7.08714 
+
+ --- Fixed point with 4 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  11.3985  11.3985  11.3985  11.3985  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  0.988427  7.41855  10.6685  7.08174 
+    fixed point: 11.3985  11.3985  11.3985  11.3985  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  6.77282  0.988427  7.41855  10.6685  7.08174 
+
+ --- Fixed point with 4 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  12.6438  12.6438  12.6438  12.6438  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  0.957322  7.42278  10.7303  7.07716 
+    fixed point: 12.6438  12.6438  12.6438  12.6438  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  6.29044  0.957322  7.42278  10.7303  7.07716 
+
+ --- Fixed point with 4 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 5 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  10.2755  10.2755  10.2755  10.2755  10.2755  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  1.02812  7.41337  10.5919  7.0877 
+    fixed point: 10.2755  10.2755  10.2755  10.2755  10.2755  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  6.86092  1.02812  7.41337  10.5919  7.0877 
+
+ --- Fixed point with 5 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  11.8285  11.8285  11.8285  11.8285  11.8285  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  0.997843  7.4173  10.6501  7.08314 
+    fixed point: 11.8285  11.8285  11.8285  11.8285  11.8285  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  6.01473  0.997843  7.4173  10.6501  7.08314 
+
+ --- Fixed point with 5 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  13.1087  13.1087  13.1087  13.1087  13.1087  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  0.971726  7.42081  10.7015  7.07927 
+    fixed point: 13.1087  13.1087  13.1087  13.1087  13.1087  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  5.3181  0.971726  7.42081  10.7015  7.07927 
+
+ --- Fixed point with 5 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 6 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  10.6748  10.6748  10.6748  10.6748  10.6748  10.6748  6.13097  6.13097  6.13097  6.13097  6.13097  6.13097  6.13097  6.13097  1.03408  7.41261  10.5806  7.08861 
+    fixed point: 10.6748  10.6748  10.6748  10.6748  10.6748  10.6748  6.13097  6.13097  6.13097  6.13097  6.13097  6.13097  6.13097  6.13097  1.03408  7.41261  10.5806  7.08861 
+
+ --- Fixed point with 6 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  12.1513  12.1513  12.1513  12.1513  12.1513  12.1513  5.04065  5.04065  5.04065  5.04065  5.04065  5.04065  5.04065  5.04065  1.00627  7.4162  10.6338  7.0844 
+    fixed point: 12.1513  12.1513  12.1513  12.1513  12.1513  12.1513  5.04065  5.04065  5.04065  5.04065  5.04065  5.04065  5.04065  5.04065  1.00627  7.4162  10.6338  7.0844 
+
+ --- Fixed point with 6 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  13.2517  13.2517  13.2517  13.2517  13.2517  13.2517  4.23391  4.23391  4.23391  4.23391  4.23391  4.23391  4.23391  4.23391  0.976675  7.42013  10.6916  7.08 
+    fixed point: 13.2517  13.2517  13.2517  13.2517  13.2517  13.2517  4.23391  4.23391  4.23391  4.23391  4.23391  4.23391  4.23391  4.23391  0.976675  7.42013  10.6916  7.08 
+
+ --- Fixed point with 6 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 7 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  10.9258  10.9258  10.9258  10.9258  10.9258  10.9258  10.9258  5.22771  5.22771  5.22771  5.22771  5.22771  5.22771  5.22771  1.03865  7.41204  10.572  7.08931 
+    fixed point: 10.9258  10.9258  10.9258  10.9258  10.9258  10.9258  10.9258  5.22771  5.22771  5.22771  5.22771  5.22771  5.22771  5.22771  1.03865  7.41204  10.572  7.08931 
+
+ --- Fixed point with 7 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  12.0351  12.0351  12.0351  12.0351  12.0351  12.0351  12.0351  4.14329  4.14329  4.14329  4.14329  4.14329  4.14329  4.14329  1.0031  7.41661  10.6399  7.08393 
+    fixed point: 12.0351  12.0351  12.0351  12.0351  12.0351  12.0351  12.0351  4.14329  4.14329  4.14329  4.14329  4.14329  4.14329  4.14329  1.0031  7.41661  10.6399  7.08393 
+
+ --- Fixed point with 7 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  12.7938  12.7938  12.7938  12.7938  12.7938  12.7938  12.7938  3.41438  3.41438  3.41438  3.41438  3.41438  3.41438  3.41438  0.961692  7.42218  10.7215  7.0778 
+    fixed point: 12.7938  12.7938  12.7938  12.7938  12.7938  12.7938  12.7938  3.41438  3.41438  3.41438  3.41438  3.41438  3.41438  3.41438  0.961692  7.42218  10.7215  7.0778 
+
+ --- Fixed point with 7 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 8 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  10.7701  10.7701  10.7701  10.7701  10.7701  10.7701  10.7701  10.7701  4.48804  4.48804  4.48804  4.48804  4.48804  4.48804  1.03574  7.4124  10.5775  7.08886 
+    fixed point: 10.7701  10.7701  10.7701  10.7701  10.7701  10.7701  10.7701  10.7701  4.48804  4.48804  4.48804  4.48804  4.48804  4.48804  1.03574  7.4124  10.5775  7.08886 
+
+ --- Fixed point with 8 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  11.4862  11.4862  11.4862  11.4862  11.4862  11.4862  11.4862  11.4862  3.57069  3.57069  3.57069  3.57069  3.57069  3.57069  0.990184  7.41832  10.665  7.082 
+    fixed point: 11.4862  11.4862  11.4862  11.4862  11.4862  11.4862  11.4862  11.4862  3.57069  3.57069  3.57069  3.57069  3.57069  3.57069  0.990184  7.41832  10.665  7.082 
+
+ --- Fixed point with 8 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  11.9748  11.9748  11.9748  11.9748  11.9748  11.9748  11.9748  11.9748  2.96101  2.96101  2.96101  2.96101  2.96101  2.96101  0.94092  7.42507  10.7635  7.07478 
+    fixed point: 11.9748  11.9748  11.9748  11.9748  11.9748  11.9748  11.9748  11.9748  2.96101  2.96101  2.96101  2.96101  2.96101  2.96101  0.94092  7.42507  10.7635  7.07478 
+
+ --- Fixed point with 8 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 9 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  4.04708  4.04708  4.04708  4.04708  4.04708  1.02872  7.4133  10.5908  7.08779 
+    fixed point: 10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  10.3208  4.04708  4.04708  4.04708  4.04708  4.04708  1.02872  7.4133  10.5908  7.08779 
+
+ --- Fixed point with 9 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  3.27308  3.27308  3.27308  3.27308  3.27308  0.978297  7.41991  10.6884  7.08024 
+    fixed point: 10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  10.7786  3.27308  3.27308  3.27308  3.27308  3.27308  0.978297  7.41991  10.6884  7.08024 
+
+ --- Fixed point with 9 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  2.74653  2.74653  2.74653  2.74653  2.74653  0.926672  7.4271  10.7927  7.07274 
+    fixed point: 11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  11.1006  2.74653  2.74653  2.74653  2.74653  2.74653  0.926672  7.4271  10.7927  7.07274 
+
+ --- Fixed point with 9 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 10 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  3.8206  3.8206  3.8206  3.8206  1.02291  7.41404  10.6018  7.08691 
+    fixed point: 9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  9.78689  3.8206  3.8206  3.8206  3.8206  1.02291  7.41404  10.6018  7.08691 
+
+ --- Fixed point with 10 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  3.13865  3.13865  3.13865  3.13865  0.971453  7.42084  10.702  7.07923 
+    fixed point: 10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  10.0853  3.13865  3.13865  3.13865  3.13865  0.971453  7.42084  10.702  7.07923 
+
+ --- Fixed point with 10 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  10.302  10.302  10.302  10.302  10.302  10.302  10.302  10.302  10.302  10.302  2.66302  2.66302  2.66302  2.66302  0.920204  7.42804  10.8061  7.07182 
+    fixed point: 10.302  10.302  10.302  10.302  10.302  10.302  10.302  10.302  10.302  10.302  2.66302  2.66302  2.66302  2.66302  0.920204  7.42804  10.8061  7.07182 
+
+ --- Fixed point with 10 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 11 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  3.71918  3.71918  3.71918  1.01973  7.41445  10.6079  7.08643 
+    fixed point: 9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  9.27358  3.71918  3.71918  3.71918  1.01973  7.41445  10.6079  7.08643 
+
+ --- Fixed point with 11 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  3.09502  3.09502  3.09502  0.969011  7.42118  10.7069  7.07887 
+    fixed point: 9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  9.46683  3.09502  3.09502  3.09502  0.969011  7.42118  10.7069  7.07887 
+
+ --- Fixed point with 11 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  2.65078  2.65078  2.65078  0.91921  7.42818  10.8082  7.07168 
+    fixed point: 9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  9.61138  2.65078  2.65078  2.65078  0.91921  7.42818  10.8082  7.07168 
+
+ --- Fixed point with 11 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 12 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  3.68838  3.68838  1.01869  7.41458  10.6099  7.08627 
+    fixed point: 8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  8.81627  3.68838  3.68838  1.01869  7.41458  10.6099  7.08627 
+
+ --- Fixed point with 12 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  3.10194  3.10194  0.969406  7.42112  10.7061  7.07893 
+    fixed point: 8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  8.93453  3.10194  3.10194  0.969406  7.42112  10.7061  7.07893 
+
+ --- Fixed point with 12 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  2.67789  2.67789  0.921397  7.42786  10.8037  7.07199 
+    fixed point: 9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  9.02586  2.67789  2.67789  0.921397  7.42786  10.8037  7.07199 
+
+ --- Fixed point with 12 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 13 hi populations...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  3.6974  1.019  7.41454  10.6093  7.08632 
+    fixed point: 8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  8.42101  3.6974  1.019  7.41454  10.6093  7.08632 
+
+ --- Fixed point with 13 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  3.13692  0.971359  7.42086  10.7022  7.07922 
+    fixed point: 8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  8.48241  3.13692  0.971359  7.42086  10.7022  7.07922 
+
+ --- Fixed point with 13 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  2.72658  0.925177  7.42732  10.7958  7.07253 
+    fixed point: 8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  8.53228  2.72658  0.925177  7.42732  10.7958  7.07253 
+
+ --- Fixed point with 13 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
+ Running with 14 hi populations...
+Jplus=7
+RATE_VS_Jfun_ALL: mnewt 
+->  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+    fixed point: 7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  7.94958  1.44624  7.36955  9.9006  7.15572 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.1
+RATE_VS_Jfun_ALL: mnewt 
+->  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+    fixed point: 7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  7.96656  1.38721  7.3748  9.98791  7.14574 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.2
+RATE_VS_Jfun_ALL: mnewt 
+->  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+    fixed point: 7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  7.98346  1.32983  7.38015  10.0755  7.13612 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.3
+RATE_VS_Jfun_ALL: mnewt 
+->  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+    fixed point: 8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  8.00028  1.27412  7.3856  10.1634  7.12688 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.4
+RATE_VS_Jfun_ALL: mnewt 
+->  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+    fixed point: 8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  8.01702  1.22005  7.39115  10.2516  7.11801 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.5
+RATE_VS_Jfun_ALL: mnewt 
+->  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+    fixed point: 8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  8.03368  1.16762  7.39681  10.3401  7.10953 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.6
+RATE_VS_Jfun_ALL: mnewt 
+->  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+    fixed point: 8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  8.05027  1.11682  7.40257  10.4289  7.10145 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.7
+RATE_VS_Jfun_ALL: mnewt 
+->  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+    fixed point: 8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  8.06679  1.06763  7.40843  10.518  7.09376 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.8
+RATE_VS_Jfun_ALL: mnewt 
+->  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  1.02004  7.41441  10.6073  7.08648 
+    fixed point: 8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  8.08324  1.02004  7.41441  10.6073  7.08648 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=7.9
+RATE_VS_Jfun_ALL: mnewt 
+->  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  0.974032  7.42049  10.6969  7.07961 
+    fixed point: 8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  8.09962  0.974032  7.42049  10.6969  7.07961 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+Jplus=8
+RATE_VS_Jfun_ALL: mnewt 
+->  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  0.929581  7.42669  10.7867  7.07316 
+    fixed point: 8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  8.11594  0.929581  7.42669  10.7867  7.07316 
+
+ --- Fixed point with 14 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 18   # of clust.s: 14    Coding: 0.0642857
+    Synapses           : J+ 8,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
+                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
+                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
+                         ni_ext_e 7     ni_ext_i 7 7 7 
+    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+
+--- bg_coding: 0.1
