@@ -1,4 +1,4 @@
-% function MFT_fun_amitmascaro_plot_Stim(tmpv)
+function MFT_fun_amitmascaro_plot_Stim_grouped(tmpv)
 options_main=tmpv;
 
 
@@ -31,10 +31,10 @@ for i_c=1:ncueset
         aux.MFT_preamble;
         Jplus=options_main.Jplus;
         save(paramsfile,'Jplus','-append');
-        flg.all_mode=0;
+        flg.all_mode=0; flg.nivsj_mode=1;
         StimHeight=stimset(i_J);
         save(paramsfile,'StimHeight','-append');
-        nn=6;
+        nn=7;
         Files=auxMFT.File_Info_MFT(nn,p,flg);
         filesave=[Files.file_amitmascaro '' extra '_results.mat'];
         load(filesave);

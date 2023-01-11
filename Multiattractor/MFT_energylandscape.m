@@ -2,7 +2,7 @@
 %
 % Luca Mazzucato January 2023
 clear all
-RUNMFT=1;
+RUNMFT=0;
 RUNWELLS=1;
 PLOTMFT=1;
 
@@ -30,7 +30,7 @@ cue.cue_option={'Pyr'};%{'VIP'};%{'SST'};%{'PV'};%
 % cueset={[0,0.1,0.2,0.3]}; % for each cue_option, write the set of values in each MFT RUN
 % Bernstein plots v2
 cue.cue_stat={'mean'}; %{'gaussian'};% 'mean', , 
-cueset={[0.02]}; % for each cue_option, write the set of values in each MFT RUN
+cueset={[0]}; % for each cue_option, write the set of values in each MFT RUN
 
 
 

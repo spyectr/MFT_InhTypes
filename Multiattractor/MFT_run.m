@@ -56,7 +56,8 @@ if cue_mode
                 % calculate effective MFT and potential wells for the first 2
                 % excitatory clusters, integrating out all other
                 % populations
-                Thres=aux.MFT_fun_amitmascaro_run_Stim_quench(options(i_c,i_J),Thres);
+                Thres=aux.MFT_fun_amitmascaro_run_Stim_quench_grouped(options(i_c,i_J),Thres);
+%                 Thres=aux.MFT_fun_amitmascaro_run_Stim_quench(options(i_c,i_J),Thres);
                 toc
             end
         end
@@ -66,6 +67,7 @@ if cue_mode
     % 2D energy landscape and integrating the force along that path to get
     % the 1D double potential well
     if PLOTMFT
-        aux.MFT_fun_amitmascaro_plot_Stim(tmpv);
+%         aux.MFT_fun_amitmascaro_plot_Stim(tmpv);
+        aux.MFT_fun_amitmascaro_plot_Stim_grouped(tmpv);
     end
 end
