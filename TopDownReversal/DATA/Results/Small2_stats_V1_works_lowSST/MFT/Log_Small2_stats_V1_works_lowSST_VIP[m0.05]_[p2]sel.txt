@@ -1,0 +1,281 @@
+
+
+
+    *******************      Mean Field Program      ********************
+
+
+
+--- Searching For Thresholds... 
+    ... for ni_e=5   ni_i=10,5,5,   ni_ext_e=5   ni_ext_i=10
+
+    Done. Thresholds found: (E) 34.1126, (I) 60.1,52.1263,16.4979,
+
+
+Check stability of state used for finding thresholds...
+>>> State used to calculate thresholds is unstable,.. looking for stable state
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    nn            : 4
+    f             : 0.175
+    p             : 2
+    J+            : 5;  J-  :0.65
+    starting point: 5.5703  6.09947  13.2151  0.880211 
+ 5.000000(bg)  10.000000(PV) 5.000000(SST) 5.000000(VIP)  [count:4]>time:200ms
+ 5.000000(bg)  10.000000(PV) 5.000000(SST) 5.000000(VIP)  [count:4]>time:400ms
+ 5.000000(bg)  10.000000(PV) 5.000000(SST) 5.000000(VIP)  [count:4]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    5  10  5  5    delta_t: 0.1 ms
+>>> Error: still unstable! QUIT
+
+--- Starting RATE_VS_J mode...
+
+--- selective activity...
+
+First round of goAB_simul
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3;  J-  :0.825
+    starting point: 5  5  5  10  5  5 
+ 8.113  8.113  3.896775(bg)  13.068280(PV) 2.609056(SST) 14.240042(VIP)  [count:6]>time:200ms
+ 8.113  8.113  3.896775(bg)  13.068280(PV) 2.609056(SST) 14.240042(VIP)  [count:6]>time:400ms
+ 8.113  8.113  3.896775(bg)  13.068280(PV) 2.609056(SST) 14.240042(VIP)  [count:6]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.1132  8.1132  3.89678  13.0683  2.60906  14.24    delta_t: 0.1 ms
+First round of mnewt
+Running RATE_VS_Jfun...
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3;  J-  :0.825
+    starting point: 30  2  2  11  11  11 
+ 8.113  8.113  3.896775(bg)  13.068280(PV) 2.609056(SST) 14.240042(VIP)  [count:6]>time:200ms
+ 8.113  8.113  3.896775(bg)  13.068280(PV) 2.609056(SST) 14.240042(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3
+    stable fixed point: 8.1132  8.1132  3.89678  13.0683  2.60906  14.24 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.1;  J-  :0.81625
+    starting point: 30  2  2  11  11  11 
+ 8.561  8.561  3.777463(bg)  12.847566(PV) 3.329522(SST) 13.949888(VIP)  [count:6]>time:200ms
+ 8.561  8.561  3.777463(bg)  12.847566(PV) 3.329522(SST) 13.949888(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.1
+    stable fixed point: 8.56092  8.56092  3.77746  12.8476  3.32952  13.9499 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.2;  J-  :0.8075
+    starting point: 30  2  2  11  11  11 
+ 9.085  9.085  3.628959(bg)  12.503917(PV) 4.315630(SST) 13.472760(VIP)  [count:6]>time:200ms
+ 9.085  9.085  3.628959(bg)  12.503917(PV) 4.315630(SST) 13.472760(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.2
+    stable fixed point: 9.08457  9.08457  3.62896  12.5039  4.31563  13.4728 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.3;  J-  :0.79875
+    starting point: 30  2  2  11  11  11 
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:4]>time:200ms
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.3
+
+--- Unstable state occurred at J+ = 3.3
+
+    Do Dynamics Simulation.
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.3;  J-  :0.79875
+    starting point: 9.80664  9.80664  3.54109  12.0977  5.75443  12.8554 
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:200ms
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:400ms
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.70664  9.70664  3.44109  11.9977  5.65443  12.7554    delta_t: 0.1 ms
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.3;  J-  :0.79875
+    starting point: 9.72346  9.72346  3.44347  11.9293  5.80083  12.64 
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:200ms
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:400ms
+ 9.707  9.707  3.441089(bg)  11.997722(PV) 5.654427(SST) 12.755405(VIP)  [count:6]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    9.70664  9.70664  3.44109  11.9977  5.65443  12.7554    delta_t: 0.1 ms
+    unstable fixed point: 9.70664  9.70664  3.44109  11.9977  5.65443  12.7554 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.4;  J-  :0.79
+    starting point: 30  2  2  11  11  11 
+ 10.52  10.4  3.202186(bg)  11.298370(PV) 7.433008(SST) 11.769039(VIP)  [count:0]>time:200ms
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:4]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.4
+
+--- Unstable state occurred at J+ = 3.4
+
+    Do Dynamics Simulation.
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.4;  J-  :0.79
+    starting point: 10.5597  10.5597  3.30226  11.3987  7.53226  11.8695 
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:6]>time:200ms
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:6]>time:400ms
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:6]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    10.4597  10.4597  3.20226  11.2987  7.43226  11.7695    delta_t: 0.1 ms
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.4;  J-  :0.79
+    starting point: 10.4434  10.4434  3.20064  11.368  7.28434  11.8826 
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:6]>time:200ms
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:6]>time:400ms
+ 10.46  10.46  3.202261(bg)  11.298721(PV) 7.432257(SST) 11.769547(VIP)  [count:6]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    10.4597  10.4597  3.20226  11.2987  7.43226  11.7695    delta_t: 0.1 ms
+    unstable fixed point: 10.4597  10.4597  3.20226  11.2987  7.43226  11.7695 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.5;  J-  :0.78125
+    starting point: 30  2  2  11  11  11 
+ 25.98  3.44  1.973857(bg)  7.523730(PV) 18.021182(SST) 6.945139(VIP)  [count:0]>time:200ms
+ 25.98  3.442  1.974468(bg)  7.525589(PV) 18.015485(SST) 6.947303(VIP)  [count:0]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.5
+    stable fixed point: 25.9768  3.44191  1.97447  7.5256  18.0154  6.94732 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.6;  J-  :0.7725
+    starting point: 30  2  2  11  11  11 
+ 35.6  1.585  1.162230(bg)  5.363236(PV) 26.598808(SST) 4.637427(VIP)  [count:0]>time:200ms
+ 35.6  1.585  1.162230(bg)  5.363235(PV) 26.598811(SST) 4.637427(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.6
+    stable fixed point: 35.6013  1.58478  1.16223  5.36324  26.5988  4.63743 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.7;  J-  :0.76375
+    starting point: 30  2  2  11  11  11 
+ 41.99  0.9293  0.758063(bg)  4.278118(PV) 32.644139(SST) 3.599666(VIP)  [count:6]>time:200ms
+ 41.99  0.9293  0.758063(bg)  4.278118(PV) 32.644139(SST) 3.599666(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.7
+    stable fixed point: 41.9903  0.929276  0.758063  4.27812  32.6441  3.59967 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.8;  J-  :0.755
+    starting point: 30  2  2  11  11  11 
+ 47.56  0.5853  0.508963(bg)  3.557900(PV) 37.985268(SST) 2.954589(VIP)  [count:6]>time:200ms
+ 47.56  0.5853  0.508963(bg)  3.557900(PV) 37.985268(SST) 2.954589(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.8
+    stable fixed point: 47.5573  0.585281  0.508963  3.5579  37.9853  2.95459 
+RATE_VS_Jfun: ni(1)=30 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.9;  J-  :0.74625
+    starting point: 30  2  2  11  11  11 
+ 52.83  0.3834  0.347610(bg)  3.047431(PV) 42.983023(SST) 2.520009(VIP)  [count:6]>time:200ms
+ 52.83  0.3834  0.347610(bg)  3.047431(PV) 42.983023(SST) 2.520009(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.9
+    stable fixed point: 52.8334  0.383446  0.34761  3.04743  42.983  2.52001 
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 2    Coding: 0.175
+    Synapses           : J+ 3.9,  J- 0.746,  Jee 0.225,   Jei:[ 3 1.5 0 ]
+                         Jii: [1.12 0 1.12 1.12 0 1.12 0 0.225 0 ]
+                         Jie: [0.225 0.337 0.225 ]   Jo 3
+    Learning Parameters: gamma 0.5     delta^2: 0
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 5      ni_i   10  5  5 
+                         ni_ext_e 5     ni_ext_i 10 0 0 
+    Thresholds         : theta_e=34.1   theta_i=[60.1 52.1 16.5 ]
+
+--- bg_coding: 0.65

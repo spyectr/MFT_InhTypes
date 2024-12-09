@@ -704,6 +704,80 @@ Jie = g*Scale*(0.03)*[1;2;1];
     nfocus = 0;             % Number of populations in focus
     tausyn_e=0.002;
     tausyn_i=tausyn_e;
+
+elseif  strcmp(Opt,'Small2_stats_V1_works_lowSST')
+    % network options
+    Network.syn='SingleExp';
+    Network.clust='hom';%'het'; % cluster: homogeneous='hom', heterogeneous='het'
+    Network.clust_syn='';
+    Network.clust_std=0.0; % het clusters: take a gaussian distribution with variance=mean*Network.clust_var
+    N=800;
+    N_e = N*4/5; % 16000
+%     N_i = N/5*[0.5,0.25,0.25]; %4000
+    N_i = N/5*[0.25,0.25,0.5]; % L2/3 in V1 from Kim et al (Osten lab) Cell 2017
+    Scale=(5000/N)^(1/2);
+    % global spontaneous firing rates (neeed to fix thresholds)
+    ni_e = 5; % 3.6;   %6.6   % AB97: 3.0
+    ni_i = 10*[1,0.5,0.5]; % 5.2;   %8.2   % AB97: 4.2
+    % external currents
+%     ni_ext = 7;
+    ni_ext_e = 5;
+    ni_ext_i = 10*[1,0,0];
+
+    tau_arp = .005;  % .002 (Unita': sec)
+    tau_i = .02*[1,1,1];     % 0.01
+    tau_e = .02;%15;     % 0.02
+
+    delta = 0.0; % 0.;    
+    x = 1.;
+    % e=pyr, i=PV,SST,VIP
+    % take values from dipoppa, scanziani, 2020 biorxiv 
+
+    g=3;
+    Jee = g*Scale*0.03;
+    Jei = g*Scale*(0.4)*[1.2,0.3,0];
+    Jii = g*Scale*(0.15)*[1,1,0;
+                        0,0,  0.2 ;
+                        1,1,0];
+    Jie = g*Scale*(0.03)*[1.2;1.5;1];
+
+    Jplus = 1.;
+    %
+    theta_e=32.0135; %22.8385;%21.7124; 
+    theta_i=[60.1,70.6848,16.4979] ;%theta_i=11.1897;%11.0887;  
+    Jplus = 5.;
+%     gam = 0.5;%1.125; % 0.5;  %1.3
+    gam = 0.5;%1.125; % 0.5;  %1.3
+
+    He = 0;%0.5;
+    Hi = 0*[1,1,1];%0.5;
+
+    Qpiu = 0.6;  %0.6
+    Qmeno = 0.3;  %0.3
+    rho = 2.75;    %(5)
+    Jzero =11.5;  %1.
+
+    pee_matrix = 0.2; % 1600;         % 1600
+    pie_matrix = 0.5*[1;1;1]; % 1600;         % 1600
+    pii_matrix = 0.5*[1,1,0;
+                    0,0,1;
+                    1,1,0]; % 400;         % 400
+    pei_matrix = 0.2*[1,1,0.]; % 400;         % 400
+    pext_matrix = 0.2; % 1600; 
+
+    % external currents
+    Jie_ext=2*Scale*0.0915*[1,0,0.];% normalized to ni_ext=2
+    Jee_ext=2*Scale*0.1027; % 
+    
+    bgr=0.65; % N_e fraction of background neurons
+    p = round(N_e*(1-bgr)/100); % keep 100 neurons per cluster
+    f = (1-bgr)/p;       % 0.09
+%     p_actual = 4;
+%     nstories = 10;    % see monte.c
+    nn = 5;                 % number of populations
+    nfocus = 0;             % Number of populations in focus
+    tausyn_e=0.002;
+    tausyn_i=tausyn_e;    
 elseif strcmp(Opt,'Multifinal')
     % network options
     Network.syn='SingleExp';
@@ -814,6 +888,6 @@ extra=''; % extra string to append on filename
 
 save(filename,'ni_e','ni_i','ni_ext_e','ni_ext_i','tau_arp','tau_i','tau_e','theta_e',...
     'theta_i','delta','f','x','Jee','Jii','Jie','Jei','Jee_ext','Jie_ext',...
-    'Jplus','Jminus','gam','He','Hi','Qpiu','Qmeno','rho','Jzero','N','N_e',...
+    'Jplus','Jminus','gam','He','Hi','N','N_e',...
     'N_i','pee_matrix','pie_matrix','pei_matrix','pii_matrix','pext_matrix','p','nn',...
     'nfocus','Opt','Sim','Network','Stimulus','tausyn_e','tausyn_i','tau_1','initial_ext','extra');

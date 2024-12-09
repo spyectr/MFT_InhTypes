@@ -689,9 +689,9 @@ classdef auxMFT
             fprintf(']\n                         Jie: [');
             fprintf('%0.03g ',Jie);
             fprintf(']   Jo %g\n',Jzero);
-            fprintf('    Learning Parameters: gamma %g   rho %g   delta^2: %g\n',gam,ro,delta);
+            fprintf('    Learning Parameters: gamma %g     delta^2: %g\n',gam,delta);
             fprintf('    Time Costants      : tau_arp %g   tau_e %g  tau_i %g\n',tau_arp,tau_e,tau_i);
-            fprintf('    Spont. Act.        : ni_e %g     ni_i   %g\n',ni_e);
+            fprintf('    Spont. Act.        : ni_e %g      ni_i  %g\n',ni_e);
             fprintf(' %0.03g ',ni_i);
             fprintf('\n                         ni_ext_e %g     ni_ext_i ',ni_ext_e);
             fprintf('%0.03g ',ni_ext_i);

@@ -19,6 +19,8 @@ clear all
 RUNMFT=1;
 RUN=1;
 PLOTMFT=1;
+RUNWELLS=0;
+PLOTWELSS=0;
 
 % Opt='Small2InhDens';%'Small2_stats_V1';%'Small2_InhStab';%
 % Jplus=4.8; Jstop=5; Jzero=4; JplusLow=4.1;
@@ -28,9 +30,10 @@ PLOTMFT=1;
 % % % Opt='Small2_stats_V1';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
 % % % Jplus=3.2; Jstop=3.3; Jzero=2.8; JplusLow=3;
 % Opt='InhTypes';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
-Opt='MarcelPost';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
-% Opt='InhTypes';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
-Jstop=4; Jzero=2; JplusLow=4; Jplus=5; 
+% Opt='MarcelPost';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
+Opt='Marcel2';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
+Jstop=10; Jzero=7; JplusLow=7.2; Jplus=8; % Opt='InhTypes';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
+% Jstop=4; Jzero=2; JplusLow=4; Jplus=5; 
 % % Opt='LargeReversalSST';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
 % % Jplus=2.5; Jstop=6; Jzero=4; JplusLow=2.2;
 
@@ -43,8 +46,8 @@ cue=struct('cue_option',[],'cue_stat',[],'cue_value',[]);
 % cue.cue_option={'VIP'};%{'SST'};%{'PV'};%{'Pyr'};%
 % cue.cue_stat={'mean'}; %{'gaussian'};% 'mean', , 'noise'
 
-% cueset={[0]}; % for each cue_option, write the set of values in each MFT RUN
-cueset={[0,0.1]}; % for each cue_option, write the set of values in each MFT RUN
+cueset={[0]}; % for each cue_option, write the set of values in each MFT RUN
+% cueset={[0,0.1]}; % for each cue_option, write the set of values in each MFT RUN
 
 stimset=[0];%,0.02,0.04];
 

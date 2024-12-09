@@ -66,7 +66,7 @@ if cue_mode
     % plot each energy potential separately by finding shortest path in
     % 2D energy landscape and integrating the force along that path to get
     % the 1D double potential well
-    if PLOTMFT
+    if PLOTWELLS
 %         aux.MFT_fun_amitmascaro_plot_Stim(tmpv);
         aux.MFT_fun_amitmascaro_plot_Stim_grouped(tmpv);
     end

@@ -8,7 +8,7 @@
 --- Searching For Thresholds... 
     ... for ni_e=7   ni_i=7,7,7,   ni_ext_e=7   ni_ext_i=7
 
-    Done. Thresholds found: (E) 4.84067, (I) 6.70931,5.56513,5.60991,
+    Done. Thresholds found: (E) 48.4067, (I) 67.0931,55.6513,56.0991,
 
 
 Check stability of state used for finding thresholds...
@@ -507,12 +507,12 @@ RATE_VS_Jfun: mnewt
 --- Summary of Parameters:
 
     Total # of Pop.s   : 6   # of clust.s: 14    Coding: 0.0642857
-    Synapses           : J+ 10,  J- 0.775,  Jee 0.0246,   Jei:[ 0.112 0.112 0 ]
-                         Jii: [0.15 0 0.0291 0.0335 0 0.0671 0 0.0123 0 ]
-                         Jie: [0.0313 0.0313 0.0313 ]   Jo 7
+    Synapses           : J+ 10,  J- 0.775,  Jee 0.246,   Jei:[ 1.12 1.12 0 ]
+                         Jii: [1.5 0 0.291 0.335 0 0.671 0 0.123 0 ]
+                         Jie: [0.313 0.313 0.313 ]   Jo 7
     Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
     Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 7     ni_i    7  7  7 
                          ni_ext_e 7     ni_ext_i 7 7 7 
-    Thresholds         : theta_e=4.84   theta_i=[6.71 5.57 5.61 ]
+    Thresholds         : theta_e=48.4   theta_i=[67.1 55.7 56.1 ]
 
 --- bg_coding: 0.1

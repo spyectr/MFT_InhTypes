@@ -30,6 +30,7 @@ flag=0;
 % STABLE
 rates=[];
 Jplus_store=[];
+rates_old_store=[];
 Eig=struct('Real',[],'Imag',[],'vector',[],'matrix',[],'phiprime',[],'linresp',[]); % dim: 1st=pop #; 2nd=eigenvector #; 3rd=Jplus step
 % UNSTABLE
 rates_un=[];

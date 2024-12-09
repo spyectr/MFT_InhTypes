@@ -1,0 +1,407 @@
+
+
+
+    *******************      Mean Field Program      ********************
+
+
+
+--- Searching For Thresholds... 
+    ... for ni_e=5   ni_i=10,5,5,   ni_ext_e=5   ni_ext_i=10
+
+    Done. Thresholds found: (E) 34.1126, (I) 60.1,52.1263,16.4979,
+
+
+Check stability of state used for finding thresholds...
+>>> State used to calculate thresholds is unstable,.. looking for stable state
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    nn            : 4
+    f             : 0.175
+    p             : 2
+    J+            : 5;  J-  :0.65
+    starting point: 5.5703  6.09947  13.2151  0.880211 
+ 5.000000(bg)  10.000000(PV) 5.000000(SST) 5.000000(VIP)  [count:4]>time:200ms
+ 5.000000(bg)  10.000000(PV) 5.000000(SST) 5.000000(VIP)  [count:4]>time:400ms
+ 5.000000(bg)  10.000000(PV) 5.000000(SST) 5.000000(VIP)  [count:4]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    5  10  5  5    delta_t: 0.1 ms
+>>> Error: still unstable! QUIT
+
+--- Starting RATE_VS_J mode...
+
+--- spontaneous activity...
+
+First round of goAB_simul
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 10000
+    nn            : 5
+    f             : 0.175
+    p             : 2
+    J+            : 3;  J-  :0.825
+    starting point: 5  5  10  5  5 
+ 8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:5]>time:200ms
+ 8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:5]>time:400ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.31568  4.06424  14.7551  0.157305  28.2514    delta_t: 0.1 ms
+First round of mnewt
+Running RATE_VS_Jfun...
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3
+    stable fixed point: 8.31568  4.06424  14.7551  0.157305  28.2514 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.1
+    stable fixed point: 8.81352  3.98929  14.9647  0.24293  28.7241 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.2
+    stable fixed point: 9.40357  3.90101  15.1849  0.395699  29.2251 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.3
+    stable fixed point: 10.1139  3.79285  15.3879  0.68658  29.6963 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.4
+    stable fixed point: 10.9858  3.65125  15.4915  1.28781  29.9628 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.5
+    stable fixed point: 12.0835  3.4425  15.2454  2.66948  29.4874 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.6
+    unstable fixed point: 13.4964  3.07493  13.947  6.0749  26.7678 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.7
+    unstable fixed point: 15.2049  2.48494  11.3184  12.0226  21.2711 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.8
+    stable fixed point: 17.0359  1.88078  8.92563  17.9474  16.3892 
+RATE_VS_Jfun: mnewt 
+--- Jplus = 3.9
+    stable fixed point: 18.8868  1.38448  7.1861  23.1247  12.9442 
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 5   # of clust.s: 2    Coding: 0.175
+    Synapses           : J+ 3.9,  J- 0.746,  Jee 0.225,   Jei:[ 3 1.5 0 ]
+                         Jii: [1.12 0 1.12 1.12 0 1.12 0 0.225 0 ]
+                         Jie: [0.225 0.337 0.225 ]   Jo 3
+    Learning Parameters: gamma 0.5     delta^2: 0
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 5      ni_i   10  5  5 
+                         ni_ext_e 5     ni_ext_i 10 0 0 
+    Thresholds         : theta_e=34.1   theta_i=[60.1 52.1 16.5 ]
+
+--- bg_coding: 0.65
+
+--- Starting All_mode...
+First round of goAB_simul
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 20000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3;  J-  :0.825
+    Contrast      : 0.5
+    starting point: 5  5  5  10  5  5 
+ 8.316  8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:6]>time:200ms
+ 8.316  8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:6]>time:400ms
+ 8.316  8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:6]>time:600ms
+
+--- Reached Stable Fixed Point by goAB_simul():
+    8.31568  8.31568  4.06424  14.7551  0.157305  28.2514    delta_t: 0.1 ms
+First round of mnewt
+ Running with 1 hi populations...
+Jplus=3
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3;  J-  :0.825
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 8.316  8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:6]>time:200ms
+ 8.316  8.316  4.064235(bg)  14.755059(PV) 0.157305(SST) 28.251422(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  8.31568  8.31568  4.06424  14.7551  0.157305  28.2514 
+    fixed point: 8.31568  8.31568  4.06424  14.7551  0.157305  28.2514 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=3.1
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.1;  J-  :0.81625
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 8.814  8.814  3.989285(bg)  14.964748(PV) 0.242930(SST) 28.724113(VIP)  [count:4]>time:200ms
+ 8.814  8.814  3.989285(bg)  14.964748(PV) 0.242930(SST) 28.724113(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  8.81352  8.81352  3.98929  14.9647  0.24293  28.7241 
+    fixed point: 8.81352  8.81352  3.98929  14.9647  0.24293  28.7241 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=3.2
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.2;  J-  :0.8075
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 9.404  9.404  3.901012(bg)  15.184927(PV) 0.395699(SST) 29.225077(VIP)  [count:4]>time:200ms
+ 9.404  9.404  3.901012(bg)  15.184927(PV) 0.395699(SST) 29.225077(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  9.40357  9.40357  3.90101  15.1849  0.395699  29.2251 
+    fixed point: 9.40357  9.40357  3.90101  15.1849  0.395699  29.2251 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=3.3
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.3;  J-  :0.79875
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 10.11  10.11  3.792847(bg)  15.387869(PV) 0.686580(SST) 29.696267(VIP)  [count:4]>time:200ms
+ 10.11  10.11  3.792847(bg)  15.387869(PV) 0.686580(SST) 29.696267(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  10.1139  10.1139  3.79285  15.3879  0.68658  29.6963 
+    fixed point: 10.1139  10.1139  3.79285  15.3879  0.68658  29.6963 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=3.4
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.4;  J-  :0.79
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 11.04  10.93  3.651198(bg)  15.491418(PV) 1.288200(SST) 29.962628(VIP)  [count:0]>time:200ms
+ 10.99  10.99  3.651254(bg)  15.491488(PV) 1.287813(SST) 29.962762(VIP)  [count:4]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  10.9858  10.9858  3.65125  15.4915  1.28781  29.9628 
+    fixed point: 10.9858  10.9858  3.65125  15.4915  1.28781  29.9628 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=3.5
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.5;  J-  :0.78125
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 23.14  5.788  2.754895(bg)  12.039168(PV) 10.217057(SST) 22.762031(VIP)  [count:0]>time:200ms
+ 13.48  10.86  3.425013(bg)  15.186144(PV) 2.845065(SST) 29.364295(VIP)  [count:0]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  12.0835  12.0835  3.4425  15.2454  2.66948  29.4874 
+    fixed point: 12.0835  12.0835  3.4425  15.2454  2.66948  29.4874 
+
+ --- Fixed point has wrong number of active clusters ---> rejected... 
+ Jplus=3.6
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.6;  J-  :0.7725
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 37.16  1.852  1.320527(bg)  6.548076(PV) 25.342274(SST) 11.706547(VIP)  [count:0]>time:200ms
+ 37.16  1.852  1.320564(bg)  6.548230(PV) 25.341843(SST) 11.706846(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  37.1607  1.8517  1.32056  6.54823  25.3418  11.7068 
+    fixed point: 37.1607  1.8517  1.32056  6.54823  25.3418  11.7068 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+Jplus=3.7
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.7;  J-  :0.76375
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 43.65  1.033  0.832003(bg)  4.957419(PV) 32.168152(SST) 8.689164(VIP)  [count:2]>time:200ms
+ 43.65  1.033  0.832003(bg)  4.957419(PV) 32.168152(SST) 8.689164(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  43.6481  1.03336  0.832003  4.95742  32.1682  8.68916 
+    fixed point: 43.6481  1.03336  0.832003  4.95742  32.1682  8.68916 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+Jplus=3.8
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.8;  J-  :0.755
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 49.07  0.6374  0.549994(bg)  4.014019(PV) 37.762507(SST) 6.950551(VIP)  [count:6]>time:200ms
+ 49.07  0.6374  0.549994(bg)  4.014019(PV) 37.762507(SST) 6.950551(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  49.0693  0.637385  0.549994  4.01402  37.7625  6.95055 
+    fixed point: 49.0693  0.637385  0.549994  4.01402  37.7625  6.95055 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+Jplus=3.9
+RATE_VS_Jfun: ni(1)=50 Hz kick starts at Jplus>1.1 
+--- goAB_simul() parameters:
+    delta_t       : 0.1 ms
+    kmax          : 5000
+    nn            : 6
+    f             : 0.175
+    p             : 2
+    J+            : 3.9;  J-  :0.74625
+    Contrast      : 0.5
+    starting point: 50  2  2  10  10  10 
+ 54.16  0.4129  0.372457(bg)  3.379969(PV) 42.844776(SST) 5.806526(VIP)  [count:6]>time:200ms
+ 54.16  0.4129  0.372457(bg)  3.379969(PV) 42.844776(SST) 5.806526(VIP)  [count:6]>time:400ms
+
+RATE_VS_Jfun_ALL: mnewt 
+->  54.1588  0.412948  0.372457  3.37997  42.8448  5.80653 
+    fixed point: 54.1588  0.412948  0.372457  3.37997  42.8448  5.80653 
+
+ --- Fixed point with 1 Active Clusters ---> stored...
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 2    Coding: 0.175
+    Synapses           : J+ 3.9,  J- 0.746,  Jee 0.225,   Jei:[ 3 1.5 0 ]
+                         Jii: [1.12 0 1.12 1.12 0 1.12 0 0.225 0 ]
+                         Jie: [0.225 0.337 0.225 ]   Jo 3
+    Learning Parameters: gamma 0.5     delta^2: 0
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 5      ni_i   10  5  5 
+                         ni_ext_e 5     ni_ext_i 10 0 0 
+    Thresholds         : theta_e=34.1   theta_i=[60.1 52.1 16.5 ]
+
+--- bg_coding: 0.65
+ Running with 2 hi populations...
+Jplus=3
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+->  8.31568  8.31568  4.06424  14.7551  0.157305  28.2514 
+    fixed point: 8.31568  8.31568  4.06424  14.7551  0.157305  28.2514 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=3.1
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+->  8.81352  8.81352  3.98929  14.9647  0.24293  28.7241 
+    fixed point: 8.81352  8.81352  3.98929  14.9647  0.24293  28.7241 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=3.2
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+->  9.40357  9.40357  3.90101  15.1849  0.395699  29.2251 
+    fixed point: 9.40357  9.40357  3.90101  15.1849  0.395699  29.2251 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=3.3
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+->  10.1139  10.1139  3.79285  15.3879  0.68658  29.6963 
+    fixed point: 10.1139  10.1139  3.79285  15.3879  0.68658  29.6963 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=3.4
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+->  10.9858  10.9858  3.65125  15.4915  1.28781  29.9628 
+    fixed point: 10.9858  10.9858  3.65125  15.4915  1.28781  29.9628 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=3.5
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+->  12.0835  12.0835  3.4425  15.2454  2.66948  29.4874 
+    fixed point: 12.0835  12.0835  3.4425  15.2454  2.66948  29.4874 
+
+ --- Fixed point with 2 Active Clusters ---> stored...
+Jplus=3.6
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Unstable fixed point.
+->  13.4964  13.4964  3.07493  13.947  6.0749  26.7678 
+    fixed point: 13.4964  13.4964  3.07493  13.947  6.0749  26.7678 
+Jplus=3.7
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Unstable fixed point.
+->  15.2049  15.2049  2.48494  11.3184  12.0226  21.2711 
+    fixed point: 15.2049  15.2049  2.48494  11.3184  12.0226  21.2711 
+Jplus=3.8
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Unstable fixed point.
+->  17.0359  17.0359  1.88078  8.92563  17.9474  16.3892 
+    fixed point: 17.0359  17.0359  1.88078  8.92563  17.9474  16.3892 
+Jplus=3.9
+Loading rates from rates_old...
+RATE_VS_Jfun_ALL: mnewt 
+Unstable fixed point.
+->  18.8868  18.8868  1.38448  7.1861  23.1247  12.9442 
+    fixed point: 18.8868  18.8868  1.38448  7.1861  23.1247  12.9442 
+
+
+--- Done.
+
+--- Summary of Parameters:
+
+    Total # of Pop.s   : 6   # of clust.s: 2    Coding: 0.175
+    Synapses           : J+ 3.9,  J- 0.746,  Jee 0.225,   Jei:[ 3 1.5 0 ]
+                         Jii: [1.12 0 1.12 1.12 0 1.12 0 0.225 0 ]
+                         Jie: [0.225 0.337 0.225 ]   Jo 3
+    Learning Parameters: gamma 0.5     delta^2: 0
+    Time Costants      : tau_arp 0.005   tau_e 0.02  tau_i 0.02
+    Time Costants      : tau_arp 0.02   tau_e 0.02  tau_i     Spont. Act.        : ni_e 5      ni_i   10  5  5 
+                         ni_ext_e 5     ni_ext_i 10 0 0 
+    Thresholds         : theta_e=34.1   theta_i=[60.1 52.1 16.5 ]
+
+--- bg_coding: 0.65

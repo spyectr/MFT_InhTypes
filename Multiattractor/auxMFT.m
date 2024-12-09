@@ -1016,24 +1016,25 @@ classdef auxMFT
             bb = (Theta-Mu)./sigma+BS;
             phiprime=zeros(n,1);
             if QUENCH==0
+                X=zeros(n); Y=zeros(n); m=zeros(n);
                 for i=1:n
                     if bb(i)>26; bbi=26; else bbi=bb(i); end % avoid Inf setting bbi to largest value giving finite phi(bbi)
                     phiprime(i) = ((Tau(i)*Risp(i)*Risp(i))/sigma(i))*(auxMFT.phi(bbi) - auxMFT.phi(aa(i)));
                     for j=1:n
                         %
-                        %         X(i,j) = A(i,j) + (0.5*(aa(i)-BS(i))*B(i,j)/sigma(i));
-                        %         Y(i,j) = A(i,j) + (0.5*(bb(i)-BS(i))*B(i,j)/sigma(i));
+                                X(i,j) = A(i,j) + (0.5*(aa(i)-BS(i))*B(i,j)/sigma(i));
+                                Y(i,j) = A(i,j) + (0.5*(bb(i)-BS(i))*B(i,j)/sigma(i));
                         
                         % debug: ------------------------------------------------------------
                         %         //fprintf('\n   delta[%d][%d]: %g  \n', i,j,(((Tau(i)*Risp(i)*Risp(i))/(2*Sigma(i)))*B(i,j)*(bb*phi(bb) - aa*phi(aa))));
                         % -------------------------------------------------------------------
                         
                         % matrix d(phi(i))/d(Ni[j]):
-                        %         m(i,j) = ((Tau(i)*Risp(i)*Risp(i))/sigma(i))*(phi(bb(i))*    Y(i,j) - phi(aa(i))*X(i,j));
+                                m(i,j) = ((Tau(i)*Risp(i)*Risp(i))/sigma(i))*(auxMFT.phi(bb(i))*    Y(i,j) - auxMFT.phi(aa(i))*X(i,j));
                         
                         % EXACT STABILITY MATRIX:
                         % AMIT-MASCARO 99 eq. (48)
-                        m(i,j) = phiprime(i)*A(i,j);
+%                         m(i,j) = phiprime(i)*A(i,j);
                         
                     end
                     m(i,i) =m(i,i) - 1.;
