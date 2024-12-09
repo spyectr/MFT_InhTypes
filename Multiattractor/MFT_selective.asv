@@ -1,0 +1,24 @@
+% Luca Mazzucato January 2023
+
+clear all
+RUNMFT=1; % run and plot MFT
+PLOTMFT=1; % plot MFT results
+
+Opt='Marcel2';%'Marcel';%'Small2ReversalLowSST';%'Small2Reversal';%'Small2InhDens';%'Small2_stats_V1';%
+Jstop=10; Jzero=7; JplusLow=7.2; Jplus=8; 
+
+cue_mode=0; % 0,1 for no cue or yes cue
+%%
+options_main=struct('a','sel','Opt',Opt,'Jstop',Jstop,'Jzero',Jzero,'cue_mode',cue_mode,'S',0,'stimset',0,'screen',0);
+if RUNMFT
+    tic
+    aux.MFTGainModulation_main_spu(options_main);
+    pltMFT.MFTGainModulation_plot(options_main);
+    toc
+end
+% plot fixed points scanned above
+if PLOTMFT
+    options_main=struct('a','sel','Opt',Opt,'Jstop',Jstop,'Jzero',Jzero,'cue_mode',cue_mode,'S',0,'stimset',0,'screen',0);
+    pltMFT.MFTGainModulation_plot(options_main);
+end
+
